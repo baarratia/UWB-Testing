@@ -1,0 +1,345 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="NRF52840DK" target="8" version="2">
+  <project Name="NRF52840DK">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_linker_heap_size="0"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="2048"
+      arm_linker_treat_warnings_as_errors="No"
+      arm_simulator_memory_simulation_parameter="RX 00000000,00080000,FFFFFFFF;RWX 20000000,00020000,CDCDCDCD"
+      arm_target_device_name="nRF52840_xxAA"
+      arm_target_interface_type="SWD"
+      c_preprocessor_definitions="BOARD_CUSTOM;BOARD_NRF52840DK;CONFIG_GPIO_AS_PINRESET;FLOAT_ABI_HARD;FREERTOS;INITIALIZE_USER_SECTIONS;NO_VTOR_CONFIG;NRF52840_XXAA;NRF_CRYPTO_BACKEND_NRF_HW_RNG_ENABLED=1 ;NRF_CRYPTO_BACKEND_NRF_HW_RNG_MBEDTLS_CTR_DRBG_ENABLED=0;NRF_CRYPTO_RNG_AUTO_INIT_ENABLED=1 ;RNG_ENABLED=1;NRF_CRYPTO_ENABLED=1;NRF_QUEUE_ENABLED=1;NRF_CRYPTO_BACKEND_MBEDTLS_ENABLED=1;NRF_CRYPTO_ALLOCATOR=NRF_CRYPTO_ALLOCATOR_MALLOC;MBEDTLS_CMAC_C;NRF_SD_BLE_API_VERSION=7;S113;SOFTDEVICE_PRESENT"
+      c_user_include_directories="../../../config;../../../../../SDK/components;../../../../../SDK/components/ble/ble_advertising;../../../../../SDK/components/ble/ble_link_ctx_manager;../../../../../SDK/components/ble/ble_dtm;../../../../../SDK/components/ble/ble_racp;../../../../../SDK/components/ble/ble_services/ble_ancs_c;../../../../../SDK/components/ble/ble_services/ble_ans_c;../../../../../SDK/components/ble/ble_services/ble_bas;../../../../../SDK/components/ble/ble_services/ble_bas_c;../../../../../SDK/components/ble/ble_services/ble_cscs;../../../../../SDK/components/ble/ble_services/ble_cts_c;../../../../../SDK/components/ble/ble_services/ble_dfu;../../../../../SDK/components/ble/ble_services/ble_dis;../../../../../SDK/components/ble/ble_services/ble_gls;../../../../../SDK/components/ble/ble_services/ble_hids;../../../../../SDK/components/ble/ble_services/ble_hrs;../../../../../SDK/components/ble/ble_services/ble_hrs_c;../../../../../SDK/components/ble/ble_services/ble_hts;../../../../../SDK/components/ble/ble_services/ble_ias;../../../../../SDK/components/ble/ble_services/ble_ias_c;../../../../../SDK/components/ble/ble_services/ble_lbs;../../../../../SDK/components/ble/ble_services/ble_lbs_c;../../../../../SDK/components/ble/ble_services/ble_lls;../../../../../SDK/components/ble/ble_services/ble_nus;../../../../../SDK/components/ble/ble_services/ble_nus_c;../../../../../SDK/components/ble/ble_services/ble_rscs;../../../../../SDK/components/ble/ble_services/ble_rscs_c;../../../../../SDK/components/ble/ble_services/ble_tps;../../../../../SDK/components/ble/common;../../../../../SDK/components/ble/nrf_ble_gatt;../../../../../SDK/components/ble/nrf_ble_qwr;../../../../../SDK/components/ble/peer_manager;../../../../../SDK/components/boards;../../../../../SDK/components/libraries/atomic;../../../../../SDK/components/libraries/atomic_fifo;../../../../../SDK/components/libraries/atomic_flags;../../../../../SDK/components/libraries/balloc;../../../../../SDK/components/libraries/bootloader/ble_dfu;../../../../../SDK/components/libraries/bsp;../../../../../SDK/components/libraries/button;../../../../../SDK/components/libraries/cli;../../../../../SDK/components/libraries/crc32;../../../../../SDK/components/libraries/crypto;../../../../../SDK/components/libraries/csense;../../../../../SDK/components/libraries/csense_drv;../../../../../SDK/components/libraries/delay;../../../../../SDK/components/libraries/ecc;../../../../../SDK/components/libraries/experimental_section_vars;../../../../../SDK/components/libraries/experimental_task_manager;../../../../../SDK/components/libraries/fds;../../../../../SDK/components/libraries/fifo;../../../../../SDK/components/libraries/fstorage;../../../../../SDK/components/libraries/gfx;../../../../../SDK/components/libraries/gpiote;../../../../../SDK/components/libraries/hardfault;../../../../../SDK/components/libraries/hardfault/nrf52;../../../../../SDK/components/libraries/hci;../../../../../SDK/components/libraries/led_softblink;../../../../../SDK/components/libraries/log;../../../../../SDK/components/libraries/log/src;../../../../../SDK/components/libraries/low_power_pwm;../../../../../SDK/components/libraries/mem_manager;../../../../../SDK/components/libraries/memobj;../../../../../SDK/components/libraries/mpu;../../../../../SDK/components/libraries/mutex;../../../../../SDK/components/libraries/pwm;../../../../../SDK/components/libraries/pwr_mgmt;../../../../../SDK/components/libraries/queue;../../../../../SDK/components/libraries/ringbuf;../../../../../SDK/components/libraries/scheduler;../../../../../SDK/components/libraries/sdcard;../../../../../SDK/components/libraries/sensorsim;../../../../../SDK/components/libraries/stack_info;../../../../../SDK/components/libraries/slip;../../../../../SDK/components/libraries/sortlist;../../../../../SDK/components/libraries/spi_mngr;../../../../../SDK/components/libraries/stack_guard;../../../../../SDK/components/libraries/strerror;../../../../../SDK/components/libraries/svc;../../../../../SDK/components/libraries/timer;../../../../../SDK/components/libraries/twi_mngr;../../../../../SDK/components/libraries/twi_sensor;../../../../../SDK/components/libraries/uart;../../../../../SDK/components/libraries/stack_info ;../../../../../SDK/components/libraries/usbd;../../../../../SDK/components/libraries/usbd/class/audio;../../../../;../../../../../SDK/components/libraries/usbd/class/cdc;../../../../../SDK/components/libraries/usbd/class/cdc/acm;../../../../../SDK/components/libraries/usbd/class/hid;../../../../../SDK/components/libraries/usbd/class/hid/generic;../../../../../SDK/components/libraries/usbd/class/hid/kbd;../../../../../SDK/components/libraries/usbd/class/hid/mouse;../../../../../SDK/components/libraries/usbd/class/msc;../../../../../SDK/components/libraries/util;../../../../../SDK/external/mbedtls/include;../../../../../SDK/components/libraries/crypto;../../../../../SDK/components/libraries/crypto/backend/cc310;../../../../../SDK/components/libraries/crypto/backend/mbedtls;../../../../../SDK/components/libraries/crypto/backend/nrf_hw;../../../../../SDK/components/libraries/crypto/backend/optiga;../../../../../SDK/components/libraries/crypto/backend/cifra;../../../../../SDK/components/libraries/crypto/backend/oberon;../../../../../SDK/components/nfc/ndef/conn_hand_parser;../../../../../SDK/components/nfc/ndef/conn_hand_parser/ac_rec_parser;../../../../../SDK/components/nfc/ndef/conn_hand_parser/ble_oob_advdata_parser;../../../../../SDK/components/nfc/ndef/conn_hand_parser/le_oob_rec_parser;../../../../../SDK/components/nfc/ndef/connection_handover/ac_rec;../../../../../SDK/components/nfc/ndef/connection_handover/ble_oob_advdata;../../../../../SDK/components/nfc/ndef/connection_handover/ble_pair_lib;../../../../../SDK/components/nfc/ndef/connection_handover/ble_pair_msg;../../../../../SDK/components/nfc/ndef/connection_handover/common;../../../../../SDK/components/nfc/ndef/connection_handover/ep_oob_rec;../../../../../SDK/components/nfc/ndef/connection_handover/hs_rec;../../../../../SDK/components/nfc/ndef/connection_handover/le_oob_rec;../../../../../SDK/components/nfc/ndef/generic/message;../../../../../SDK/components/nfc/ndef/generic/record;../../../../../SDK/components/nfc/ndef/launchapp;../../../../../SDK/components/nfc/ndef/parser/message;../../../../../SDK/components/nfc/ndef/parser/record;../../../../../SDK/components/nfc/ndef/text;../../../../../SDK/components/nfc/ndef/uri;../../../../../SDK/components/nfc/platform;../../../../../SDK/components/nfc/t2t_lib;../../../../../SDK/components/nfc/t2t_parser;../../../../../SDK/components/nfc/t4t_lib;../../../../../SDK/components/nfc/t4t_parser/apdu;../../../../../SDK/components/nfc/t4t_parser/cc_file;../../../../../SDK/components/nfc/t4t_parser/hl_detection_procedure;../../../../../SDK/components/nfc/t4t_parser/tlv;../../../../../SDK/components/softdevice/common;../../../../../SDK/components/softdevice/s113/headers;../../../../../SDK/components/softdevice/s113/headers/nrf52;../../../../../SDK/components/toolchain/cmsis/include;../../../../../SDK/external/fprintf;../../../../../SDK/external/freertos/portable/CMSIS/nrf52;../../../../../SDK/external/freertos/portable/GCC/nrf52;../../../../../SDK/external/freertos/source/include;../../../../../SDK/external/segger_rtt;../../../../../SDK/external/utf_converter;../../../../../SDK/integration/nrfx;../../../../../SDK/integration/nrfx/legacy;../../../../../SDK/modules/nrfx;../../../../../SDK/modules/nrfx/drivers/include;../../../../../SDK/modules/nrfx/hal;../../../../../SDK/modules/nrfx/mdk;../config;../../../Src;../../../Src/Apps/Inc;../../../Src/Apps/fira;../../../Src/Boards/Inc;../../../Src/Boards/Src/nRF52840DK;../../../Src/OSAL/FreeRTOS;../../../Src/UWB;../../../Src/UWB/dw3000;../../../Src/UWB/support;../../../Src/Helpers/Inc;../../../Src/HAL/Inc;./bsp;../../../Libs/niq/Inc;../../../Libs/niq/Src;../../../Libs/uwb_driver/Inc;../../../Libs/uwbstack_lib/compat/include;../../../Libs/uwbstack_lib/helpers/include;../../../Libs/uwbstack_lib/mcps/include;../../../Libs/uwbstack_lib/uwbmac/include;../../../Libs/uwbstack_lib/uwb_driver_interface"
+      debug_additional_load_file=""
+      debug_register_definition_file="../../../../../SDK/modules/nrfx/mdk/nrf52840.svd"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      gcc_c_language_standard="c11"
+      gcc_debugging_level="None"
+      gcc_entry_point="Reset_Handler"
+      linker_additional_options="--whole-archive;../../../Libs/niq/libniq-m4-hfp-0.9.9.1.a;../../../Libs/uwb_driver/lib/libdwt_uwb_driver-hfp-6.0.0.a;../../../Libs/uwbstack_lib/cmsis_v1/build-release/libembedded_mac_cmsis_v1.a;--no-whole-archive"
+      linker_output_format="hex"
+      linker_printf_fmt_level="long"
+      linker_printf_width_precision_supported="Yes"
+      linker_scanf_fmt_level="long"
+      linker_section_placement_file="flash_placement.xml"
+      linker_section_placement_macros="FLASH_PH_START=0x0;FLASH_PH_SIZE=0x100000;RAM_PH_START=0x20000000;RAM_PH_SIZE=0x40000;FLASH_START=0x1c000;FLASH_SIZE=0xe4000;RAM_START=0x2000260c;RAM_SIZE=0x3d9f4;DEFAULT_CONFIG_START=0x1d000;DEFAULT_CONFIG_SIZE=0x400;FCONFIG_START=0x1e000;FCONFIG_SIZE=0x400;INIT_START=0x1f000"
+      linker_section_placements_segments="FLASH RX 0x0 0x100000;RAM RWX 0x20000000 0x40000"
+      macros="CMSIS_CONFIG_TOOL=../../../../../SDK/external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar"
+      post_build_command="mergehex  -m $(SolutionDir)/$(OutDir)/$(SolutionName).hex  ../../../../../SDK/components/softdevice/s113/hex/s113_nrf52_7.0.1_softdevice.hex -o $(SolutionDir)/$(OutDir)/$(SolutionName)_full.hex"
+      project_directory=""
+      project_type="Executable" />
+    <folder Name="Segger Startup Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
+    </folder>
+    <folder Name="nRF_Log">
+      <file file_name="../../../../../SDK/components/libraries/log/src/nrf_log_backend_rtt.c" />
+      <file file_name="../../../../../SDK/components/libraries/log/src/nrf_log_backend_serial.c" />
+      <file file_name="../../../../../SDK/components/libraries/log/src/nrf_log_backend_uart.c" />
+      <file file_name="../../../../../SDK/components/libraries/log/src/nrf_log_default_backends.c" />
+      <file file_name="../../../../../SDK/components/libraries/log/src/nrf_log_frontend.c" />
+      <file file_name="../../../../../SDK/components/libraries/log/src/nrf_log_str_formatter.c" />
+    </folder>
+    <folder Name="nRF_Libraries">
+      <file file_name="../../../../../SDK/components/libraries/button/app_button.c" />
+      <file file_name="../../../../../SDK/components/libraries/util/app_error.c" />
+      <file file_name="../../../../../SDK/components/libraries/util/app_error_handler_gcc.c" />
+      <file file_name="../../../../../SDK/components/libraries/util/app_error_weak.c" />
+      <file file_name="../../../../../SDK/components/libraries/timer/app_timer_freertos.c" />
+      <file file_name="../../../../../SDK/components/libraries/util/app_util_platform.c" />
+      <file file_name="../../../../../SDK/components/libraries/fds/fds.c" />
+      <file file_name="../../../../../SDK/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c" />
+      <file file_name="../../../../../SDK/components/libraries/hardfault/hardfault_implementation.c" />
+      <file file_name="../../../../../SDK/components/libraries/util/nrf_assert.c" />
+      <file file_name="../../../../../SDK/components/libraries/atomic_fifo/nrf_atfifo.c" />
+      <file file_name="../../../../../SDK/components/libraries/atomic_flags/nrf_atflags.c" />
+      <file file_name="../../../../../SDK/components/libraries/atomic/nrf_atomic.c" />
+      <file file_name="../../../../../SDK/components/libraries/balloc/nrf_balloc.c" />
+      <file file_name="../../../../../SDK/external/fprintf/nrf_fprintf.c" />
+      <file file_name="../../../../../SDK/external/fprintf/nrf_fprintf_format.c" />
+      <file file_name="../../../../../SDK/components/libraries/fstorage/nrf_fstorage.c" />
+      <file file_name="../../../../../SDK/components/libraries/fstorage/nrf_fstorage_sd.c" />
+      <file file_name="../../../../../SDK/components/libraries/memobj/nrf_memobj.c" />
+      <file file_name="../../../../../SDK/components/libraries/ringbuf/nrf_ringbuf.c" />
+      <file file_name="../../../../../SDK/components/libraries/experimental_section_vars/nrf_section_iter.c" />
+      <file file_name="../../../../../SDK/components/libraries/strerror/nrf_strerror.c" />
+      <file file_name="../../../../../SDK/components/libraries/sensorsim/sensorsim.c" />
+      <file file_name="../../../../../SDK/components/libraries/usbd/app_usbd.c" />
+      <file file_name="../../../../../SDK/components/libraries/usbd/app_usbd_core.c" />
+      <file file_name="../../../../../SDK/components/libraries/usbd/app_usbd_serial_num.c" />
+      <file file_name="../../../../../SDK/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c" />
+      <file file_name="../../../../../SDK/components/libraries/uart/app_uart_fifo.c" />
+      <file file_name="../../../../../SDK/components/libraries/fifo/app_fifo.c" />
+      <folder Name="Crypto">
+        <folder Name="mbedTLS">
+          <file file_name="../../../../../SDK/external/mbedtls/library/aes.c" />
+          <file file_name="../../../../../SDK/external/mbedtls/library/arc4.c" />
+          <file file_name="../../../../../SDK/external/mbedtls/library/blowfish.c" />
+          <file file_name="../../../../../SDK/external/mbedtls/library/camellia.c" />
+          <file file_name="../../../../../SDK/external/mbedtls/library/ccm.c" />
+          <file file_name="../../../../../SDK/external/mbedtls/library/cipher.c" />
+          <file file_name="../../../../../SDK/external/mbedtls/library/cipher_wrap.c" />
+          <file file_name="../../../../../SDK/external/mbedtls/library/cmac.c" />
+          <file file_name="../../../../../SDK/external/mbedtls/library/des.c" />
+          <file file_name="../../../../../SDK/external/mbedtls/library/gcm.c" />
+        </folder>
+        <file file_name="../../../../../SDK/components/libraries/crypto/nrf_crypto_aes.c" />
+        <file file_name="../../../../../SDK/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c" />
+        <file file_name="../../../../../SDK/components/libraries/crypto/nrf_crypto_rng.c" />
+        <file file_name="../../../../../SDK/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c" />
+        <file file_name="../../../../../SDK/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c" />
+        <file file_name="../../../../../SDK/components/libraries/crypto/nrf_crypto_init.c" />
+        <file file_name="../../../../../SDK/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c" />
+        <file file_name="../../../../../SDK/components/libraries/crypto/nrf_crypto_aead.c" />
+      </folder>
+      <file file_name="../../../../../SDK/components/libraries/usbd/app_usbd_string_desc.c" />
+      <file file_name="../../../../../SDK/components/libraries/queue/nrf_queue.c" />
+    </folder>
+    <folder Name="None">
+      <file file_name="../../../../../SDK/modules/nrfx/mdk/ses_startup_nrf_common.s" />
+      <file file_name="../../../../../SDK/modules/nrfx/mdk/ses_startup_nrf52840.s" />
+      <file file_name="../../../../../SDK/modules/nrfx/mdk/system_nrf52840.c" />
+    </folder>
+    <folder Name="Third Parties">
+      <file file_name="../../../../../SDK/external/freertos/source/croutine.c" />
+      <file file_name="../../../../../SDK/external/freertos/source/event_groups.c" />
+      <file file_name="../../../../../SDK/external/freertos/source/portable/MemMang/heap_4.c" />
+      <file file_name="../../../../../SDK/external/freertos/source/list.c" />
+      <file file_name="../../../../../SDK/external/freertos/portable/GCC/nrf52/port.c" />
+      <file file_name="../../../../../SDK/external/freertos/portable/CMSIS/nrf52/port_cmsis.c" />
+      <file file_name="../../../../../SDK/external/freertos/portable/CMSIS/nrf52/port_cmsis_systick.c" />
+      <file file_name="../../../../../SDK/external/freertos/source/queue.c" />
+      <file file_name="../../../../../SDK/external/freertos/source/stream_buffer.c" />
+      <file file_name="../../../../../SDK/external/freertos/source/tasks.c" />
+      <file file_name="../../../../../SDK/external/freertos/source/timers.c" />
+    </folder>
+    <folder Name="Board Definition">
+      <file file_name="../../../../../SDK/components/boards/boards.c" />
+    </folder>
+    <folder Name="nRF_Drivers">
+      <file file_name="../../../../../SDK/integration/nrfx/legacy/nrf_drv_clock.c" />
+      <file file_name="../../../../../SDK/integration/nrfx/legacy/nrf_drv_uart.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/soc/nrfx_atomic.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_clock.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_gpiote.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_uart.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_uarte.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_rtc.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_power.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_spim.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_systick.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_timer.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_twi.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_wdt.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/hal/nrf_nvmc.c" />
+      <file file_name="../../../../../SDK/integration/nrfx/legacy/nrf_drv_spi.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_usbd.c" />
+      <file file_name="../../../../../SDK/integration/nrfx/legacy/nrf_drv_power.c" />
+      <file file_name="../../../../../SDK/integration/nrfx/legacy/nrf_drv_twi.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/prs/nrfx_prs.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_spi.c" />
+      <file file_name="../../../../../SDK/integration/nrfx/legacy/nrf_drv_rng.c" />
+      <file file_name="../../../../../SDK/modules/nrfx/drivers/src/nrfx_rng.c" />
+    </folder>
+    <folder Name="Board Support">
+      <file file_name="../../../../../SDK/components/libraries/bsp/bsp.c" />
+      <file file_name="../../../../../SDK/components/libraries/bsp/bsp_btn_ble.c" />
+    </folder>
+    <folder Name="Application_config">
+      <file file_name="../config/sdk_config.h" />
+      <file file_name="../config/default_config.h" />
+      <file file_name="../config/FreeRTOSConfig.h" />
+      <file file_name="../config/project_name.c" />
+      <file file_name="../config/app_config.h" />
+      <file file_name="../config/app_config.c" />
+      <file file_name="../config/default_config.c" />
+    </folder>
+    <folder Name="nRF_Segger_RTT">
+      <file file_name="../../../../../SDK/external/segger_rtt/SEGGER_RTT.c" />
+      <file file_name="../../../../../SDK/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c" />
+      <file file_name="../../../../../SDK/external/segger_rtt/SEGGER_RTT_printf.c" />
+    </folder>
+    <folder Name="nRF_BLE">
+      <file file_name="../../../../../SDK/components/ble/common/ble_advdata.c" />
+      <file file_name="../../../../../SDK/components/ble/ble_advertising/ble_advertising.c" />
+      <file file_name="../../../../../SDK/components/ble/common/ble_conn_params.c" />
+      <file file_name="../../../../../SDK/components/ble/common/ble_conn_state.c" />
+      <file file_name="../../../../../SDK/components/ble/common/ble_srv_common.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/gatt_cache_manager.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/gatts_cache_manager.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/id_manager.c" />
+      <file file_name="../../../../../SDK/components/ble/nrf_ble_gatt/nrf_ble_gatt.c" />
+      <file file_name="../../../../../SDK/components/ble/nrf_ble_qwr/nrf_ble_qwr.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/peer_data_storage.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/peer_database.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/peer_id.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/peer_manager.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/peer_manager_handler.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/pm_buffer.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/security_dispatcher.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/security_manager.c" />
+      <file file_name="../../../../../SDK/components/ble/ble_link_ctx_manager/ble_link_ctx_manager.c" />
+      <file file_name="../../../../../SDK/components/ble/peer_manager/auth_status_tracker.c" />
+    </folder>
+    <folder Name="UTF8/UTF16 converter">
+      <file file_name="../../../../../SDK/external/utf_converter/utf.c" />
+    </folder>
+    <folder Name="nRF_BLE_Services">
+      <file file_name="../../../../../SDK/components/ble/ble_services/ble_bas/ble_bas.c" />
+      <file file_name="../../../../../SDK/components/ble/ble_services/ble_dis/ble_dis.c" />
+      <file file_name="../../../../../SDK/components/ble/ble_services/ble_hrs/ble_hrs.c" />
+      <file file_name="../../../../../SDK/components/ble/ble_services/ble_nus/ble_nus.c" />
+    </folder>
+    <folder Name="nRF_SoftDevice">
+      <file file_name="../../../../../SDK/components/softdevice/common/nrf_sdh.c" />
+      <file file_name="../../../../../SDK/components/softdevice/common/nrf_sdh_ble.c" />
+      <file file_name="../../../../../SDK/components/softdevice/common/nrf_sdh_freertos.c" />
+      <file file_name="../../../../../SDK/components/softdevice/common/nrf_sdh_soc.c" />
+    </folder>
+    <folder Name="Src">
+      <folder Name="OSAL">
+        <folder Name="FreeRTOS">
+          <file file_name="../../../Src/OSAL/FreeRTOS/cmsis_os.c" />
+          <file file_name="../../../Src/OSAL/FreeRTOS/alloc.c" />
+          <file file_name="../../../Src/OSAL/FreeRTOS/cmsis_os.h" />
+        </folder>
+      </folder>
+      <folder Name="Apps">
+        <folder Name="fira">
+          <file file_name="../../../Src/Apps/fira/common_fira.c" />
+          <file file_name="../../../Src/Apps/fira/common_fira.h" />
+          <file file_name="../../../Src/Apps/fira/fira_app.c" />
+        </folder>
+        <folder Name="Inc">
+          <file file_name="../../../Src/Apps/Inc/app.h" />
+        </folder>
+        <folder Name="Src">
+          <file file_name="../../../Src/Apps/Src/app.c" />
+        </folder>
+      </folder>
+      <folder Name="EventManager">
+        <folder Name="FreeRTOS">
+          <file file_name="../../../Src/EventManager/FreeRTOS/EventManager.c" />
+          <file file_name="../../../Src/EventManager/FreeRTOS/EventManager.h" />
+        </folder>
+      </folder>
+      <folder Name="UWB">
+        <folder Name="dw3000">
+          <file file_name="../../../Src/UWB/dw3000/dw3000_mcps_mcu.c" />
+          <file file_name="../../../Src/UWB/dw3000/dw3000_mcps_mcu.h" />
+          <file file_name="../../../Src/UWB/dw3000/dw3000_mcps_wrapper.h" />
+          <file file_name="../../../Src/UWB/dw3000/dw3000_xtal_trim.c" />
+          <file file_name="../../../Src/UWB/dw3000/dw3000_xtal_trim.h" />
+        </folder>
+        <file file_name="../../../Src/UWB/main_uwb.c" />
+      </folder>
+      <folder Name="Boards">
+        <folder Name="Inc">
+          <file file_name="../../../Src/Boards/Inc/int_priority.h" />
+          <file file_name="../../../Src/Boards/Inc/thisBoard.h" />
+        </folder>
+        <folder Name="Src">
+          <folder Name="nRF52840DK">
+            <file file_name="../../../Src/Boards/Src/nRF52840DK/custom_board.h" />
+            <file file_name="../../../Src/Boards/Src/nRF52840DK/nRF52840DK.c" />
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="Helpers">
+        <folder Name="Inc">
+          <file file_name="../../../Src/Helpers/Inc/deca_dbg.h" />
+          <file file_name="../../../Src/Helpers/Inc/error.h" />
+          <file file_name="../../../Src/Helpers/Inc/task_signal.h" />
+          <file file_name="../../../Src/Helpers/Inc/version.h" />
+          <file file_name="../../../Src/Helpers/Inc/translate.h" />
+          <file file_name="../../../Src/Helpers/Inc/util.h" />
+        </folder>
+        <file file_name="../../../Src/Helpers/deca_dbg.c" />
+        <file file_name="../../../Src/Helpers/translate.c" />
+        <file file_name="../../../Src/Helpers/util.c" />
+      </folder>
+      <folder Name="HAL">
+        <folder Name="Inc">
+          <file file_name="../../../Src/HAL/Inc/HAL_button.h" />
+          <file file_name="../../../Src/HAL/Inc/HAL_error.h" />
+          <file file_name="../../../Src/HAL/Inc/HAL_gpio.h" />
+          <file file_name="../../../Src/HAL/Inc/HAL_lock.h" />
+          <file file_name="../../../Src/HAL/Inc/HAL_rtc.h" />
+          <file file_name="../../../Src/HAL/Inc/HAL_timer.h" />
+          <file file_name="../../../Src/HAL/Inc/HAL_uart.h" />
+          <file file_name="../../../Src/HAL/Inc/HAL_usb.h" />
+          <file file_name="../../../Src/HAL/Inc/HAL_watchdog.h" />
+        </folder>
+        <folder Name="Src">
+          <folder Name="nRF528xx">
+            <file file_name="../../../Src/HAL/Src/nRF528xx/HAL_rtc.c" />
+            <file file_name="../../../Src/HAL/Src/nRF528xx/HAL_watchdog.c" />
+            <file file_name="../../../Src/HAL/Src/nRF528xx/HAL_SPI.c" />
+            <file file_name="../../../Src/HAL/Src/nRF528xx/HAL_DW3000.c" />
+            <file file_name="../../../Src/HAL/Src/nRF528xx/HAL_sleep.c" />
+            <file file_name="../../../Src/HAL/Src/nRF528xx/HAL_error.c" />
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="Crypto">
+        <folder Name="Nordic">
+          <file file_name="../../../Src/Crypto/Nordic/mcps_crypto.c" />
+        </folder>
+      </folder>
+      <folder Name="FreeRTOS_hooks">
+        <file file_name="../config/FreeRTOS_idle_hook.c" />
+      </folder>
+      <folder Name="Comm">
+        <folder Name="ble">
+          <file file_name="../../../Src/Comm/ble/ble.c" />
+        </folder>
+      </folder>
+    </folder>
+    <configuration Name="Release" gcc_optimization_level="Level 2 for size" />
+    <configuration
+      Name="Debug"
+      debug_additional_load_file="../../../../../SDK/components/softdevice/s113/hex/s113_nrf52_7.0.1_softdevice.hex"
+      external_build_file_name=""
+      gcc_debugging_level="Level 3"
+      gcc_dwarf_version="None"
+      gcc_optimization_level="Level 2 balanced"
+      link_use_linker_script_file="No"
+      linker_section_placement_file="flash_placement.xml" />
+    <folder Name="Libs">
+      <folder Name="uwb_driver">
+        <folder Name="Inc">
+          <file file_name="../../../Libs/uwb_driver/Inc/deca_device_api.h" />
+          <file file_name="../../../Libs/uwb_driver/Inc/deca_interface.h" />
+        </folder>
+      </folder>
+      <folder Name="uwbstack_lib">
+        <folder Name="helpers">
+          <folder Name="include">
+            <file file_name="../../../Libs/uwbstack_lib/helpers/include/fira_helper.h" />
+            <file file_name="../../../Libs/uwbstack_lib/helpers/include/fira_region_params.h" />
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="niq">
+        <folder Name="Inc">
+          <file file_name="../../../Libs/niq/Inc/niq.h" />
+        </folder>
+      </folder>
+    </folder>
+    <file file_name="../../../Src/main.c" />
+  </project>
+  <configuration Name="Release" c_preprocessor_definitions="NDEBUG" />
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG; DEBUG_NRF"
+    gcc_debugging_level="Level 2"
+    gcc_optimization_level="Level 3" />
+  <configuration Name="Common" gcc_optimization_level="Level 3" />
+</solution>

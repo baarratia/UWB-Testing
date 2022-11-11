@@ -1,0 +1,69 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1/>
+ <Memory2/>
+ <Memory3/>
+ <Memory4/>
+ <Project>
+  <ProjectSessionItem path="DWM3001CDK"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Application_config"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Libs"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Libs;niq"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Libs;niq;Inc"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Libs;uwb_driver"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Libs;uwb_driver;Inc"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Libs;uwbstack_lib"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Libs;uwbstack_lib;helpers"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Libs;uwbstack_lib;helpers;include"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Src"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Src;Apps"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Src;Apps;fira"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Src;Apps;Src"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Src;OSAL"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Src;OSAL;FreeRTOS"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Src;UWB"/>
+  <ProjectSessionItem path="DWM3001CDK;DWM3001CDK;Src;UWB;dw3000"/>
+ </Project>
+ <Register1/>
+ <Register2/>
+ <Register3/>
+ <Register4/>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never"/>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="37" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../Src/main.c" selected="0" top="20" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="176" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../Src/UWB/main_uwb.c" selected="0" top="159" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="3" y="10" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/project_name.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="50" y="702" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../Libs/uwb_driver/Inc/deca_device_api.h" selected="0" top="689" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="95" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/default_config.h" selected="1" top="81" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="26" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../Src/UWB/main_uwb.h" selected="0" top="1" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="42" y="545" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../Src/OSAL/FreeRTOS/cmsis_os.c" selected="0" top="387" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="59" y="191" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../Src/Apps/fira/fira_app.c" selected="0" top="170" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="46" y="131" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../Src/Apps/fira/common_fira.c" selected="0" top="146" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="20" y="150" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../Libs/niq/Inc/niq.h" selected="0" top="131" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="DWM3001CDK" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
+</session>
